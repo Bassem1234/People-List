@@ -1,8 +1,13 @@
-#header{
-    height: 40mm !important;
-    background-color:darkseagreen;
-    padding-top: 5mm;
+
+#list{
+    margin-top: 10mm; 
+    padding-left:10mm;
 }
-#title{
-    text-align: center;
+
+.col-5{
+    border: 1px solid black !important;
+    padding: 5mm !important;
+}
+#left{
+    margin-left: 7mm !important;
 }

@@ -13,11 +13,11 @@
 </nav>
 <!-- Header -->
 
-<div class="container-fluid" style="margin-top: 10mm; padding-left:10mm">
-
+<div class="container-fluid" id="body">
+<!-- form to add new user -->
     <form [formGroup]="addForm">
         <div class="row">
-            <div class="col-5" style="border: 1px solid black;padding: 5mm;">
+            <div class="col-5">
                 <p><i class="fa fa-user"></i> Name: <input type="text" placeholder="Name" class="form-control"
                         formControlName="name"></p>
                 <p><i class="fa fa-user"></i> Username: <input type="text" placeholder="Username" class="form-control"
@@ -38,7 +38,7 @@
                     </p>
                 </section>
             </div>
-            <div class="col-5" style="border: 1px solid black; margin-left: 15mm; padding: 5mm;">
+            <div class="col-5">
                 <p><i class="fa fa-phone"></i> Phone: <input type="text" placeholder="Phone Number" class="form-control"
                         formControlName="phone"></p>
                 <p><i class="fa fa-globe"></i> Website: <input type="text" placeholder="Website" class="form-control"
@@ -55,6 +55,6 @@
         </div>
     </form>
 
-    <button class="btn btn-success" (click)="saveUser()">Save</button>
+    <button class="btn btn-success" (click)="saveUser()" id="butt">Save</button>
 
 </div>

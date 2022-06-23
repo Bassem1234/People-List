@@ -19,7 +19,7 @@
 
 <!-- Users list -->
 <div class="container-fluid">
-    <div class="row" style="padding-left: 10mm; padding-right:10mm;">
+    <div class="row" id="list">
         <div class="col-3" *ngFor="let user of users | filter:filter; let i =index">
         <div class="card" style="width: 18rem; margin-top: 10mm;" [routerLink]="['/details']" [queryParams]="{id: user.id}">
             <div class="card-body">

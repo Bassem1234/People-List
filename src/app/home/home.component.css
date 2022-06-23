@@ -1,11 +1,4 @@
-#header{
-    height: 40mm !important;
-    background-color:darkseagreen;
-    padding-top: 5mm;
-}
-#title{
-    text-align: center;
-}
-#search{
-
+#list{
+    padding-left: 10mm !important; 
+    padding-right:10mm !important;
 }

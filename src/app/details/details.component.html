@@ -1,0 +1,48 @@
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">{{user.name}}</a>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+      <div class="row">
+         
+          <div class="col-2"><button class="btn btn-outline-light" type="submit" [routerLink]="['']">back</button></div>
+      </div>
+</div>
+  </nav>
+<!-- Header -->
+
+<!-- Users list -->
+<div class="container-fluid" style="margin-top: 10mm; padding-left:10mm">
+    <div class="row">
+    <div class="col-5" style="border: 1px solid black;padding: 5mm;">
+        <p><i class="fa fa-user"></i> Name: {{user.name}}</p>
+        <p><i class="fa fa-user"></i> Username: {{user.username}}</p>
+        <p><i class="fa fa-envelope"></i> Email: {{user.email}}</p>
+        <section>
+            <i class="fa fa-home"></i> Address: <br>
+            <p>Street: {{user.address.street}}</p>
+            <p>Suite: {{user.address.suite}}</p>
+            <p>City: {{user.address.city}}</p>
+            <p>ZIP code: {{user.address.zipcode}}</p>
+            <p>GEO: lat {{user.address.geo.lat}} / lng {{user.address.geo.lng}}</p>
+        </section>
+    </div>
+    <div class="col-5" style="border: 1px solid black; margin-left: 7mm; padding: 5mm;">
+        <p><i class="fa fa-phone"></i> Phone: {{user.phone}}</p>
+    <p><i class="fa fa-globe"></i> Website: {{user.website}}</p>
+    <section>
+        <i class="fa fa-building"></i>  Company: <br>
+        <p>Name: {{user.company.name}}</p>
+        <p>Catch-Phrase: {{user.company.catchPhrase}}</p>
+        <p>Bs: {{user.company.bs}}</p>
+    </section>
+    </div>
+</div>
+</div>

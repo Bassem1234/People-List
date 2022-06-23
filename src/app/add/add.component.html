@@ -1,0 +1,60 @@
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand btn" [routerLink]="['']">List of People</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active btn" aria-current="page" disabled="true">Add user</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header -->
+
+<div class="container-fluid" style="margin-top: 10mm; padding-left:10mm">
+
+    <form [formGroup]="addForm">
+        <div class="row">
+            <div class="col-5" style="border: 1px solid black;padding: 5mm;">
+                <p><i class="fa fa-user"></i> Name: <input type="text" placeholder="Name" class="form-control"
+                        formControlName="name"></p>
+                <p><i class="fa fa-user"></i> Username: <input type="text" placeholder="Username" class="form-control"
+                        formControlName="username"></p>
+                <p><i class="fa fa-envelope"></i> Email: <input type="email" placeholder=" Email" class="form-control"
+                        formControlName="email"></p>
+                <section>
+                    <i class="fa fa-home"></i> Address: <br>
+                    <p>Street: <input type="text" placeholder="Street" class="form-control" formControlName="street">
+                    </p>
+                    <p>Suite: <input type="text" placeholder="Suite" class="form-control" formControlName="suite"></p>
+                    <p>City: <input type="text" placeholder="City" class="form-control" formControlName="city"></p>
+                    <p>ZIP code: <input type="number" placeholder="ZIP Code" class="form-control"
+                            formControlName="zipcode"></p>
+                    <p>GEO: Lat <input type="number" placeholder="Latitude" class="form-control" formControlName="lat">
+                        Lng
+                        <input type="number" placeholder="Longitude" class="form-control" formControlName="lng">
+                    </p>
+                </section>
+            </div>
+            <div class="col-5" style="border: 1px solid black; margin-left: 15mm; padding: 5mm;">
+                <p><i class="fa fa-phone"></i> Phone: <input type="text" placeholder="Phone Number" class="form-control"
+                        formControlName="phone"></p>
+                <p><i class="fa fa-globe"></i> Website: <input type="text" placeholder="Website" class="form-control"
+                        formControlName="website"></p>
+                <section>
+                    <i class="fa fa-building"></i> Company: <br>
+                    <p>Name: <input type="text" placeholder="Company Name" class="form-control" formControlName="cName">
+                    </p>
+                    <p>Catch-Phrase: <input type="text" placeholder="Catch-Phrase" class="form-control"
+                            formControlName="catchPhrase"></p>
+                    <p>Bs: <input type="text" placeholder="BS" class="form-control" formControlName="bs"></p>
+                </section>
+            </div>
+        </div>
+    </form>
+
+    <button class="btn btn-success" (click)="saveUser()">Save</button>
+
+</div>
